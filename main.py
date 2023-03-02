@@ -37,7 +37,12 @@ elif choice=="c" or choice=="C":
     print("Division")
     a = int(input("Input first number: "))
     b = int(input("Input second number: "))
-    div(a,b)
+    while b == 0:
+        print("Second number cannot be zero.Please enter a valid number.")
+        a = int(input("Input first number: "))
+        b = int(input("Input second number: "))
+    else:
+        div(a,b)
 elif choice == "d" or choice == "D":
     print("Multiplication")
     a = int(input("Input first number: "))
